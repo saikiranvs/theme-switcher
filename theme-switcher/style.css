@@ -1,0 +1,142 @@
+.theme-light {
+  --primary: #fff;
+  --secondary: whitesmoke;
+  --accent: #000;
+  --pure: #fff;
+}
+
+.theme-dark {
+  --primary: #121212;
+  --secondary: #0b0b0b;
+  --accent: #fff;
+  --pure: #fff;
+}
+
+.theme-aquaDark {
+  --primary: #80ffff;
+  --secondary: #99ffff;
+  --accent: #000;
+  --pure: #fff;
+}
+
+.theme-cornflowerblue {
+  --primary: #76a0ef;
+  --secondary: #8db0f2;
+  --accent: #154eb4;
+  --pure: #fff;
+}
+
+.theme-crimsonDark {
+  --primary: #000;
+  --secondary: #1a1a1a;
+  --accent: #ee4466;
+  --pure: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: background 0.5s ease-in-out;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  background: var(--primary);
+  overflow: hidden;
+}
+
+.container {
+  width: 1192px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem 0;
+}
+
+nav .branding {
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+nav ul li a {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--accent);
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+nav ul li a:hover {
+  color: var(--primary);
+  background-color: var(--accent);
+}
+
+nav ul li select {
+  display: inline-block;
+  height: 30px;
+  width: 150px;
+  padding: 2px 10px;
+  outline: none;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  background: var(--secondary);
+  border-radius: 4px;
+}
+
+header,
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+button {
+  background: var(--accent);
+  color: var(--primary);
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: var(--primary);
+  color: var(--accent);
+  border: 2px solid var(--accent);
+}
+
+section {
+  background: var(--secondary);
+  padding: 2rem;
+  height: 520px;
+}
